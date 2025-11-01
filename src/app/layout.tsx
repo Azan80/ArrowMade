@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NeuroCap",
-  description: "NeuroCap an AI-powered Crypto Analytics Platform",
+  title: "VisionChat",
+  description: "An AI chat assistant",
 };
 
 export default function RootLayout({

@@ -1,7 +1,7 @@
 'use client';
 
 import { useAuth } from '@/lib/AuthContext/auth-context';
-import { Activity, BarChart2, ChevronDown, Home, LogOut, MessageCircle, Search, Settings, User } from 'lucide-react';
+import { ChevronDown, Home, LogOut, MessageCircle, Search, Settings, User } from 'lucide-react';
 import NextImage from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -47,8 +47,6 @@ export default function TopNavBar({ theme, themeClasses }: TopNavBarProps) {
 
     const menuItems = [
         { name: 'Home', icon: Home, href: '/' },
-        { name: 'Markets', icon: Activity, href: '/markets' },
-        { name: 'Analytics', icon: BarChart2, href: '/analytics', badge: 'AI' },
         ...(user ? [{ name: 'Chat', icon: MessageCircle, href: '/chat' }] : []),
     ];
 
