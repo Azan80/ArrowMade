@@ -90,16 +90,6 @@ export default function TopNavBar({ theme, themeClasses }: TopNavBarProps) {
                                             }`} />
                                         <span className="relative">
                                             {item.name}
-                                            {item.badge && (
-                                                <span className="absolute -top-2.5 -right-1 text-[10px] font-semibold">
-                                                    <span className="relative">
-                                                        <span className="absolute -inset-1 bg-gradient-to-r from-violet-600/20 to-pink-600/20 blur-sm rounded-full animate-pulse" />
-                                                        <span className="relative bg-gradient-to-r from-violet-500 via-fuchsia-500 to-pink-500 bg-clip-text text-transparent bg-[length:200%_200%] animate-[gradient_3s_ease-in-out_infinite]">
-                                                            {item.badge}
-                                                        </span>
-                                                    </span>
-                                                </span>
-                                            )}
                                         </span>
                                     </Link>
                                 );
